@@ -44,13 +44,27 @@ To use a custom domain:
 3. Add to `index.html` hero section and archive list
 4. Update `feed.xml` with new entry
 
-## Newsletter Integration
+## Newsletter Integration — Beehiiv
 
-The subscribe form uses Buttondown as an example. Replace with:
-- **Buttondown:** `https://buttondown.email/api/emails/embed-subscribe/YOUR_NEWSLETTER`
-- **Substack:** `https://yourname.substack.com/subscribe`
-- **ConvertKit:** Your form action URL
-- **Custom:** Your own backend
+This site uses **Beehiiv** for email subscriptions (2,500 subscribers free).
+
+### Quick Setup
+
+1. Sign up at https://beehiiv.com
+2. Get your embed code: Settings → Integrations → API & Embeds
+3. Replace `YOUR_PUBLICATION_ID` in `index.html` with your actual embed URL
+4. Deploy: `git push`
+
+See `BEEHIIV-SETUP.md` for detailed instructions.
+
+### Why Beehiiv?
+
+- Free up to 2,500 subscribers
+- Your own domain and branding
+- Deep analytics + referral programs
+- 100% revenue if you go paid (no 10% cut like Substack)
+- Full API access for custom integrations
+- Export your list anytime (you own your audience)
 
 ## License
 

@@ -694,6 +694,14 @@ body {
     text-decoration: underline;
 }
 
+/* ===== Beehiiv Embed Styles ===== */
+iframe[data-test-id="beehiiv-embed"] {
+    width: 100% !important;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
 /* ===== Issue Page Styles ===== */
 .gradient-title {
     background: linear-gradient(135deg, var(--color-text) 0%, var(--color-accent) 100%);

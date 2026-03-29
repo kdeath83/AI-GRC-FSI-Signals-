@@ -149,7 +149,16 @@
                 <div class="subscribe-box">
                     <h3 class="subscribe-title">Get Signals in your inbox</h3>
                     <p class="subscribe-text">Tuesday and Thursday. No spam. Unsubscribe anytime.</p>
-                    <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/YOUR_NEWSLETTER" method="post" target="popupwindow">
+                    <!-- BEEHIIV EMBED - Replace with your actual embed code from Settings > Integrations > API & Embeds -->
+                    <iframe src="https://embeds.beehiiv.com/YOUR_PUBLICATION_ID?slim=true" 
+                            data-test-id="beehiiv-embed" 
+                            height="52" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            style="width: 100%; max-width: 600px; margin: 0 auto; border-radius: 8px; background: transparent;">
+                    </iframe>
+                    <!-- Fallback form until you get your Beehiiv embed code -->
+                    <form class="subscribe-form beehiiv-fallback" action="#" method="post" style="display: none;">
                         <input type="email" name="email" placeholder="your@email.com" required class="subscribe-input">
                         <button type="submit" class="btn btn-primary">Subscribe</button>
                     </form>
